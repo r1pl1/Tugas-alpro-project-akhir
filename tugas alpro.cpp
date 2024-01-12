@@ -8,6 +8,7 @@ using namespace std;
   Rifqi Dyas Aqil Prasetyo
   Risky Dharmawan Prihadhi
   */
+
 struct barang {
   const int pensil = 1500;
   const int bukutulis = 30000;
