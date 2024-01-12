@@ -2,6 +2,12 @@
 #include <iomanip>
 using namespace std;
 
+
+/*anggota kelompok
+  Lisan Shidqi Farizan
+  Rifqi Dyas Aqil Prasetyo
+  Risky Dharmawan Prihadhi
+  */
 struct barang {
   const int pensil = 1500;
   const int bukutulis = 30000;
