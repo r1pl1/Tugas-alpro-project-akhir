@@ -1,7 +1,6 @@
- #include <iostream>
+#include <iostream>
 #include <iomanip>
 using namespace std;
-
 
 /*anggota kelompok
   Lisan Shidqi Farizan
@@ -28,6 +27,7 @@ int main() {
    int uang;
    int kembalian;
 
+  barang: 
   cout << setw(46) << "----------Daftar Barang----------\n\n";
   cout << "1. pensil : Rp. " << daftar.pensil << endl;
   cout << endl;
@@ -47,6 +47,12 @@ int main() {
   do {
     cout << "Masukkan pilihan barang (1-7): ";
     cin >> pilihan;
+    if (pilihan >= 8){
+      system("CLS");
+      cout << "barang belum ada" << endl;
+      goto barang;
+      }
+
     cout << "masukkan jumlah barang: ";
     cin >> jumlah;
     switch(pilihan) {
@@ -71,19 +77,23 @@ int main() {
       case 7:
         total += daftar.karton *jumlah;
         break;
-      default:
-        cout << "pilihan tidak valid" << endl;
-        break;
     }
     cout << "apakah ingin melanjutkan belanja? (y/n): ";
     cin >> lanjut;
   } while (lanjut == 'y' || lanjut == 'Y');
     
   cout << "total belanja: Rp. " << total << endl;
+  
+  money: 
   cout << "masukkan uang pembayaran: Rp. ";
   cin >> uang;
+  if (uang < total){
+    cout << "maaf uang anda tidak cukup untuk membayar\n";
+    goto money;
+    }
+    
   kembalian = uang - total;
-  cout << "kembalian: Rp. " << kembalian << endl;
+  cout << "\nkembalian: Rp. " << kembalian << endl;
   
   return 0;
 }
