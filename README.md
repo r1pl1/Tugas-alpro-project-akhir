@@ -9,4 +9,4 @@
 </p>
 
 
-<p align="center"> Berikut Link Video Penjelasan nya: <a href="link penjelasan">Instagram</p>
+<p align="center"> Berikut Link Video Penjelasan nya: <a href="https://www.instagram.com/reel/C2KPUJJRZ8E/?igsh=MTg5NjAxaHltYWtwdg==">Instagram</p>
